@@ -92,12 +92,12 @@ public class Rsa : IRsa
 
         public string Crypt(string m, string e, string n)
         {
-            return BigInteger.ModPow(BigInteger.Parse(m), BigInteger.Parse(e), BigInteger.Parse(n)).ToString();
+            return BigInteger.ModPow( BigInteger.Parse(m), BigInteger.Parse(e), BigInteger.Parse(n)).ToString();
         }
         
         public string DeCrypt(string m, string d, string n)
         {
-            return BigInteger.ModPow(BigInteger.Parse(m), BigInteger.Parse(d), BigInteger.Parse(n)).ToString();
+            return BigInteger.ModPow( BigInteger.Parse(m), BigInteger.Parse(d), BigInteger.Parse(n)).ToString();
         }
         
         
